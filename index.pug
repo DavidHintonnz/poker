@@ -1,0 +1,28 @@
+.container
+  h1.border John's Poker Timer
+
+  .container
+    #sessionlength-container.toggle-button-container
+      header Session Length
+      time#session-length
+
+
+      .toggle-button-container__sub-container
+      button.toggle-timer( type="button" id="decrease-session") -
+        button.toggle-timer( type="button" id="increase-session") +
+
+    #breaklength-container.toggle-button-container
+      header Break Length
+      time#break-length
+      .toggle-button-container__sub-container
+        button.toggle-timer( type="button" id="decrease-break") -
+        button.toggle-timer( type="button" id="increase-break") +
+
+    #countdown-container
+      header#type Time
+      time#countdown
+
+    #button-container
+      button( type="button" id="start-session") Start
+      button( type="button" id="stop-session") Stop
+      button( type="button" id="reset-session") Reset
